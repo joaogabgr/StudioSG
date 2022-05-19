@@ -15,32 +15,40 @@
 header {
     height: 500px;
     background-image: url("imagens/header.png");
-    background-position: bottom bottom;
-    background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 header div#menu {
     background-color: #0D0D0D;
     padding: 20px;
-    opacity: 0.85;
     border-radius: 0px 0px 5px 5px;
     justify-content: space-around;
 }
 
 header a.menu {
     text-decoration: none;
-    color: var(--fonte);
+    color: white;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0px 15px 0px 0px;
 }
 
+header a.menu:hover {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+}
+
 header h1 {
     text-align: center;
-    color: var(--fonte);
+    color: white;
     padding-top: 300px;
+}
+header p{
+    color: white;
+    text-align: center;
 }
 
 main {
@@ -48,26 +56,95 @@ main {
     height: max-content;
 }
 
-main div#about {
+div#about {
     display: flex;
     justify-content: space-evenly;
 }
-main img{
+
+div#about img {
     margin: 50px 0px 50px 0px;
     box-shadow: 10px 10px 10px black;
     max-width: 400px;
     border-radius: 10px;
 }
-main h1 {
-    padding: 10px 0px 20px 0px;
+
+div#about h1, div#about p {
+    padding: 20px 20px 10px 20px;
+    text-align: justify;
+    color: white;
 }
-main article{
+
+div#about article {
     background-color: #101010;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
     margin: 50px 0px 50px 0px;
     width: 400px;
-    color: var(--fonte);
-    text-align: justify;
-    padding: 20px;
+}
+
+div#sociais {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#sociais article.card {
+    background-color: #101010;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    margin: 50px 0px 50px 0px;
+    width: 300px;
+}
+
+article.card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+article.card a:hover {
+    font-size: 1.1rem;
+}
+
+img.cardicon {
+    margin: 80px 88px;
+}
+
+img.cardyou {
+    margin: 80px 52px;
+}
+
+div#photo {
+    height: 500px;
+    background-image: url("imagens/tocando.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div#artitas {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#artitas article.card {
+    background-color: #101010;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    margin: 50px 0px 50px 0px;
+    width: 600px;
+    text-align: center;
+    color: white;
+    padding: 40px 0px;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    color: white;
 }
