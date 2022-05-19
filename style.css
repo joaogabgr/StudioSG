@@ -46,7 +46,8 @@ header h1 {
     color: white;
     padding-top: 300px;
 }
-header p{
+
+header p {
     color: white;
     text-align: center;
 }
@@ -147,4 +148,66 @@ footer {
     background-color: black;
     text-align: center;
     color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    div#about {
+        display: block;
+        text-align: center;
+    }
+
+    div#about img {
+        margin: 50px 0px 50px 0px;
+        box-shadow: 10px 10px 10px black;
+        width: 75%;
+        max-width: 550px;
+        border-radius: 10px;
+    }
+
+    div#about h1, div#about p {
+        padding: 20px 20px 10px 20px;
+        text-align: justify;
+        color: white;
+    }
+
+    div#about article {
+        background-color: #101010;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px black;
+        width: 75%;
+        max-width: 550px;
+        margin: auto;
+    }
+
+    div#sociais {
+        height: max-content;
+        display: block;
+    }
+
+    div#sociais article.card {
+        background-color: #101010;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px black;
+        margin: 50px auto;
+        width: 75%;
+        max-width: 550px;
+    }
+    article.card h1{
+        padding-bottom: 30px;
+    }
+    article.card a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    article.card a:hover {
+        font-size: 1.1rem;
+    }
+
+    img.cardicon {
+        text-align: center;
+    }
 }
