@@ -192,9 +192,11 @@ footer {
         width: 75%;
         max-width: 550px;
     }
-    article.card h1{
+
+    article.card h1 {
         padding-bottom: 30px;
     }
+
     article.card a {
         text-decoration: none;
         color: black;
@@ -208,6 +210,35 @@ footer {
     }
 
     img.cardicon {
+        padding-top: 30px;
+        margin: 20px auto;
+        width: 75%;
+        max-width: 124px;
+        display: block;
+    }
+
+    img.cardyou {
+        padding-top: 30px;
+        margin: 20px auto;
+        width: 75%;
+        max-width: 196px;
+        display: block;
+    }
+
+    div#artitas {
+        display: block;
+    }
+
+    div#artitas article.card {
+        display: block;
+        margin: 30px auto;
+        background-color: #101010;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px black;
+        width: 75%;
+        max-width: 550px;
         text-align: center;
+        color: white;
+        padding: 40px 0px;
     }
 }
