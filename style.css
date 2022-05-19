@@ -23,7 +23,7 @@ header {
 
 header div#menu {
     background-color: #0D0D0D;
-    padding: 20px;
+    padding: 20px 0px 20px 10px;
     border-radius: 0px 0px 5px 5px;
     justify-content: space-around;
 }
