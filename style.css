@@ -59,6 +59,7 @@ main {
 
 div#about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -84,8 +85,9 @@ div#about article {
 }
 
 div#sociais {
-    height: 500px;
+    height: max-content;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -127,7 +129,6 @@ div#photo {
 }
 
 div#artitas {
-    height: 500px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -137,7 +138,8 @@ div#artitas article.card {
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
     margin: 50px 0px 50px 0px;
-    width: 600px;
+    width: 75%;
+    max-width: 600px;
     text-align: center;
     color: white;
     padding: 40px 0px;
