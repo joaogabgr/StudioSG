@@ -13,7 +13,7 @@
 }
 
 header {
-    height: 501px;
+    height: 500px;
     background-image: url("imagens/header.png");
     background-position: bottom;
     background-size: cover;
@@ -22,6 +22,7 @@ header {
 }
 
 header div#menu {
+    text-align: center;
     background-color: #0D0D0D;
     padding: 20px 0px 20px 10px;
     border-radius: 0px 0px 5px 5px;
@@ -31,13 +32,13 @@ header div#menu {
 header a.menu {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 0px 15px;
+    padding: 0px 5px;
 }
 
 header a.menu:hover {
-    font-size: 1.1rem;
+    font-size: .9rem;
     color: #bbbbbb;
 }
 
