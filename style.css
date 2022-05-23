@@ -1,154 +1,127 @@
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: var(--cor1);
 }
 
 :root {
-    --cor1: #4973F2;
-    --cor2: #4878D9;
-    --cor3: #37538C;
-    --cor4: #BF0606;
-    --cor5: #0D0D0D;
-    --fonte: #D6D6D6;
+  --cor1: #0D0D0D;
+  --cor2: #201e1e;
+}
+
+#imagem {
+    background: var(--cor1) url(imagens/tocando.png) center center no-repeat fixed;
+    background-size: cover;
+    height: 500px;
 }
 
 header {
-    height: 500px;
-    background-image: url("imagens/header.png");
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: var(--cor1) url(imagens/header.png) center center no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  height: 500px;
 }
 
-header div#menu {
-    text-align: center;
-    background-color: #0D0D0D;
-    padding: 20px 0px 20px 10px;
-    border-radius: 0px 0px 5px 5px;
-    justify-content: space-around;
+div#menu {
+  background-color: var(--cor1);
+  padding: 20px;
 }
 
-header a.menu {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0px 5px;
+.menu {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 15px;
 }
 
-header a.menu:hover {
-    font-size: .9rem;
-    color: #bbbbbb;
+header > h1 {
+  color: white;
+  margin-top: 300px;
 }
 
-header h1 {
-    text-align: center;
-    color: white;
-    padding-top: 300px;
-}
-
-header p {
-    color: white;
-    text-align: center;
-}
-
-main {
-    background-color: var(--cor5);
-    height: max-content;
-}
-
-div#about {
+div#sobre {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-div#about img {
-    margin: 50px 0px 50px 0px;
-    box-shadow: 10px 10px 10px black;
+div#sobre img {
+    width: 75%;
     max-width: 400px;
     border-radius: 10px;
+    margin: 30px;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
 }
 
-div#about h1, div#about p {
-    padding: 20px 20px 10px 20px;
-    text-align: justify;
-    color: white;
-}
-
-div#about article {
-    background-color: #101010;
+div#sobre article {
+    width: 75%;
+    max-width: 400px;
+    background-color: var(--cor2);
     border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    margin: 50px 0px 50px 0px;
-    width: 400px;
+    margin: 30px;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
 }
 
-div#sociais {
-    height: max-content;
+div#sobre h1, div#sobre p {
+    padding: 20px;
+    text-align: justify;
+}
+
+#sociais {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-div#sociais article.card {
-    background-color: #101010;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    margin: 50px 0px 50px 0px;
-    width: 300px;
-}
-
-article.card a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-article.card a:hover {
-    font-size: 1.1rem;
-}
-
-img.cardicon {
-    margin: 80px 88px;
-}
-
-img.cardyou {
-    margin: 80px 52px;
-}
-
-div#photo {
-    height: 500px;
-    background-image: url("imagens/tocando.png");
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-div#artitas {
+.card {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    height: 350px;
+    width: 75%;
+    max-width: 400px;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
 }
 
-div#artitas article.card {
-    background-color: #101010;
+.card:hover {
+    border: 2px solid white;
+}
+
+.card{
+    margin-top: 40px;
+}
+
+.card h1 {
+    padding-top: 30px;
+    font-size: 1.5rem;
+}
+
+div#artistas {
+    background-color: var(--cor2);
     border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    margin: 50px 0px 50px 0px;
-    width: 75%;
-    max-width: 600px;
+    margin: 20px auto;
+    height: 500px;
     text-align: center;
-    color: white;
-    padding: 40px 0px;
+    width: 75%;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+}
+
+div#artistas h1{
+    padding-top: 30px;
 }
 
 footer {
-    padding: 10px;
     background-color: black;
     text-align: center;
-    color: white;
+    padding: 10px;
 }
