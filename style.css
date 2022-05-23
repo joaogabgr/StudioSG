@@ -3,6 +3,7 @@
   margin: 0px;
   text-decoration: none;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -10,14 +11,8 @@ body {
 }
 
 :root {
-  --cor1: #0D0D0D;
+  --cor1: #0d0d0d;
   --cor2: #201e1e;
-}
-
-#imagem {
-    background: var(--cor1) url(imagens/tocando.png) center center no-repeat fixed;
-    background-size: cover;
-    height: 500px;
 }
 
 header {
@@ -30,13 +25,16 @@ header {
 div#menu {
   background-color: var(--cor1);
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
   color: white;
   font-weight: bold;
   font-size: 1.1rem;
-  padding-right: 15px;
+  padding: 0px 10px;
 }
 
 header > h1 {
@@ -45,83 +43,94 @@ header > h1 {
 }
 
 div#sobre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 div#sobre img {
-    width: 75%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin: 30px;
-    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+  width: 75%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: 5px 5px 10px rgb(15, 15, 15);
 }
 
 div#sobre article {
-    width: 75%;
-    max-width: 400px;
-    background-color: var(--cor2);
-    border-radius: 10px;
-    margin: 30px;
-    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+  width: 75%;
+  max-width: 400px;
+  background-color: var(--cor2);
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: 5px 5px 10px rgb(15, 15, 15);
 }
 
-div#sobre h1, div#sobre p {
-    padding: 20px;
-    text-align: justify;
+div#sobre h1,
+div#sobre p {
+  padding: 20px;
+  text-align: justify;
 }
 
 #sociais {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--cor2);
-    border-radius: 10px;
-    height: 350px;
-    width: 75%;
-    max-width: 400px;
-    text-align: center;
-    margin: 30px;
-    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor2);
+  border-radius: 10px;
+  height: 350px;
+  width: 75%;
+  max-width: 400px;
+  text-align: center;
+  margin: 30px;
+  box-shadow: 5px 5px 10px rgb(15, 15, 15);
 }
 
 .card:hover {
-    border: 2px solid white;
+  border: 2px solid white;
 }
 
-.card{
-    margin-top: 40px;
+.card {
+  margin-top: 40px;
 }
 
 .card h1 {
-    padding-top: 30px;
-    font-size: 1.5rem;
-}
-
-div#artistas {
-    background-color: var(--cor2);
-    border-radius: 10px;
-    margin: 20px auto;
-    height: 500px;
-    text-align: center;
-    width: 75%;
-    box-shadow: 5px 5px 10px rgb(15, 15, 15);
-}
-
-div#artistas h1{
-    padding-top: 30px;
+  padding-top: 30px;
+  font-size: 1.5rem;
 }
 
 footer {
-    background-color: black;
-    text-align: center;
-    padding: 10px;
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+#imagem {
+  background: var(--cor1) url(imagens/tocando.png) center top no-repeat fixed;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
+#imagem h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#imagem ul {
+  columns: 2;
+  list-style-type: none;
+}
+
+#imagem li {
+  padding: 10px;
 }

@@ -6,11 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Estudio Grossi</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 650px) {
+        div#menu {
+          padding: 20px;
+        }
+        .menu {
+          font-size: 0.9rem;
+          padding: 0px 5px;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <header>
       <div id="menu">
+        <picture>
+          <source media="(max-width: 550px)" srcset="imagens/logo/Logos/LogoBranca.png">
+        <img src="imagens/logo/Logos/LogoBrancaNOME.png" height="60px" alt="">  
+        </picture>
         <nav>
           <a class="menu" href="#menu">HOME</a>
           <a class="menu" href="#sobre">SOBRE</a>
@@ -70,11 +85,18 @@
           <h1>YOUTUBE</h1></a
         >
       </div>
-      <div id="imagem"></div>
-      <div id="artistas">
-        <article>
-          <h1>ARTISTAS</h1>
-        </article>
+      <div id="imagem">
+        <h1>ARTISTAS</h1>
+        <ul>
+          <li>Leo e Junior</li>
+          <li>Hugo e Guilherme</li>
+          <li>Leo e Junior</li>
+          <li>Hugo e Guilherme</li>
+          <li>Leo e Junior</li>
+          <li>Hugo e Guilherme</li>
+          <li>Leo e Junior</li>
+          <li>Hugo e Guilherme</li>
+        </ul>
       </div>
     </main>
     <footer>
