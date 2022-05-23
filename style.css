@@ -23,11 +23,11 @@ header {
 }
 
 div#menu {
-  background-color: var(--cor1);
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--cor1);
+  padding: 20px;
 }
 
 .menu {
@@ -112,12 +112,12 @@ footer {
 }
 
 #imagem {
-  background: var(--cor1) url(imagens/tocando.png) center top no-repeat fixed;
-  background-size: cover;
-  height: 500px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  background: var(--cor1) url(imagens/tocando.png) center top no-repeat fixed;
+  background-size: cover;
+  height: 500px;
   text-align: center;
 }
 
