@@ -24,6 +24,7 @@ header {
 
 div#menu {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   background-color: var(--cor1);
